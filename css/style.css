@@ -4,9 +4,15 @@
     text-decoration: none !important;
 }
 
-.navbar {
-    position: relative;
+.container-fluid {
     z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 .banner {
@@ -430,8 +436,13 @@ footer {
 /* Mobile */
 @media (max-width: 576px) {
 
+    .navbar-brand {
+        color: white !important;
+    }
+
     .banner {
         background-image: url('../images/mobile/image-hero.jpg');
+        margin-top: -59px;
     }
 
     .banner-p {
